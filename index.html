@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential HTML Code You Should Know</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace, Courier, sans-serif;
+            background-color: #eee;
+            padding: 4px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Essential HTML Code You Should Know</h1>
+        <p>Learn the key HTML elements that every developer should be familiar with!</p>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>1. Basic HTML Structure</h2>
+            <p>The basic structure of any HTML document includes essential tags that define the content.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Headings and Paragraphs</h2>
+            <p>Headings are used to define titles, while paragraphs define blocks of text.</p>
+            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text that gives information about the topic.&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Links</h2>
+            <p>Links are used to navigate between pages or to external resources.</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>4. Images</h2>
+            <p>Images can be added to your web pages using the <code>&lt;img&gt;</code> tag.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>5. Lists</h2>
+            <p>Lists are useful for displaying multiple items. There are ordered and unordered lists.</p>
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>6. Forms</h2>
+            <p>Forms are used to collect user input. The most common input types include text, email, and submit buttons.</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>7. Tables</h2>
+            <p>Tables are used to organize data in rows and columns.</p>
+            <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>8. Semantic HTML Elements</h2>
+            <p>Semantic elements improve accessibility and provide meaningful structure to your HTML.</p>
+            <pre><code>&lt;header&gt;Header content&lt;/header&gt;
+&lt;nav&gt;Navigation links&lt;/nav&gt;
+&lt;section&gt;Main content section&lt;/section&gt;
+&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>9. Comments</h2>
+            <p>Comments in HTML are not displayed on the page but are useful for documenting code.</p>
+            <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>10. Embedding Media</h2>
+            <p>HTML allows you to embed videos and audio directly into a page.</p>
+            <pre><code>&lt;video controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;</code></pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 HTML Essentials | Created for developers to learn essential HTML elements.</p>
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Essential HTML and CSS Guide</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="html-guide.html">HTML Guide</a>
+        <a href="css-guide.html">CSS Guide</a>
+    </nav>
+
+    <div class="content">
+        <h2>Welcome to the HTML and CSS Learning Guide!</h2>
+        <p>Use the navigation bar above to switch between the HTML and CSS guide pages.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 HTML & CSS Essentials | Created for developers to learn HTML and CSS concepts.</p>
+    </footer>
+
+</body>
+</html>
