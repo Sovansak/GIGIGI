@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential CSS Code You Should Know</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace, Courier, sans-serif;
+            background-color: #eee;
+            padding: 4px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Essential CSS Code You Should Know</h1>
+        <p>Learn the key CSS techniques that every developer should be familiar with!</p>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>1. Basic Layout with Flexbox</h2>
+            <p>Flexbox is a powerful layout tool for designing responsive and flexible layouts.</p>
+            <pre><code>/* Flex container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Flex items */
+.item {
+  flex: 1;
+  margin: 10px;
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>2. CSS Grid Layout</h2>
+            <p>CSS Grid is perfect for creating complex grid-based layouts.</p>
+            <pre><code>/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Grid items */
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Media Queries for Responsiveness</h2>
+            <p>Media queries help create responsive designs that adapt to different screen sizes.</p>
+            <pre><code>/* Default styles (mobile-first) */
+.container {
+  display: block;
+  padding: 20px;
+}
+
+/* Larger screens */
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>4. Hover Effects</h2>
+            <p>Hover effects can make your website interactive and engaging.</p>
+            <pre><code>/* Button hover effect */
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: darkblue;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>5. Typography and Text Styling</h2>
+            <p>Typography is key to readability and design consistency.</p>
+            <pre><code>/* Basic typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>6. Centering Elements</h2>
+            <p>Centering elements vertically and horizontally is a common task in web design.</p>
+            <pre><code>/* Flexbox center alignment */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>7. Custom Scrollbars</h2>
+            <p>Style the scrollbar for a better user experience on webkit browsers (Chrome, Safari).</p>
+            <pre><code>/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>8. Transitions</h2>
+            <p>Transitions make changes in CSS properties smooth over time.</p>
+            <pre><code>/* Smooth transition for background color */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: green;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>9. Box Shadows and Border Radius</h2>
+            <p>Box shadows and border radius can add depth and rounded corners to elements.</p>
+            <pre><code>/* Box shadow and rounded corners */
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>10. Positioning</h2>
+            <p>Use positioning to control the layout of elements on the page.</p>
+            <pre><code>/* Absolute positioning */
+.relative-container {
+  position: relative;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.absolute-element {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: lightcoral;
+  padding: 10px;
+}</code></pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 CSS Essentials | Created for developers to learn essential CSS techniques.</p>
+    </footer>
+
+</body>
+</html>
